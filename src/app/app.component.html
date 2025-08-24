@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Aterrizaje Nexcent</title>
+    <!-- Incluye Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter de Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Encabezado y Navegación -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/4CAF50/fff?text=N" alt="Logo Nexcent" class="h-10 rounded-md">
+                <span class="text-xl font-bold text-gray-800">Nexcent</span>
+            </a>
+            <div class="hidden md:flex space-x-6 lg:space-x-12 items-center">
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Inicio</a>
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Servicios</a>
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Características</a>
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Producto</a>
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Testimonios</a>
+                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">FAQ</a>
+            </div>
+            <div class="flex items-center space-x-2">
+                <a href="#" class="hidden md:block text-green-600 font-semibold px-4 py-2 rounded-md hover:bg-gray-100 transition duration-300">Iniciar sesión</a>
+                <a href="#" class="bg-green-600 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">Registrarse</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl text-gray-800">
+                &#9776;
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Inicio</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Servicios</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Características</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Producto</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Testimonios</a>
+                <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">FAQ</a>
+                <a href="#" class="block py-2 px-4 text-green-600 font-semibold rounded-md hover:bg-gray-100">Iniciar sesión</a>
+                <a href="#" class="block py-2 px-4 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 text-center">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Principal (Hero) -->
+        <section class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800">Lecciones y perspicacias <br><span class="text-green-600">de 8 años</span></h1>
+                    <p class="text-gray-600 text-lg md:text-xl">Dónde hacer crecer tu negocio como fotógrafo: ¿sitio o redes sociales?</p>
+                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300">Registrarse</button>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://placehold.co/400x300/F5F7FA/717171?text=Ilustración" alt="Ilustración principal" class="w-full max-w-sm rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Clientes -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Nuestros clientes</h2>
+                <p class="text-gray-600 mb-8">Hemos estado trabajando con algunos socios fantásticos.</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C1" alt="Cliente 1" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C2" alt="Cliente 2" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C3" alt="Cliente 3" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C4" alt="Cliente 4" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C5" alt="Cliente 5" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C6" alt="Cliente 6" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/48x48/4D4D4D/fff?text=C7" alt="Cliente 7" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Comunidad -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Gestiona toda tu comunidad <br>en un solo sistema</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">¿Para quién es adecuado Nextcent?</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/64x64/4CAF50/fff?text=Icon" alt="Organizaciones de membresía" class="mx-auto mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Organizaciones de Membresía</h3>
+                        <p class="text-gray-600">Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones y pagos.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/64x64/4CAF50/fff?text=Icon" alt="Asociaciones Nacionales" class="mx-auto mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Asociaciones Nacionales</h3>
+                        <p class="text-gray-600">Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones y pagos.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/64x64/4CAF50/fff?text=Icon" alt="Clubes y Grupos" class="mx-auto mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Clubes y Grupos</h3>
+                        <p class="text-gray-600">Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones y pagos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Pixelgrade -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center md:justify-start">
+                    <img src="https://placehold.co/400x400/F5F7FA/717171?text=Ilustración" alt="Ilustración Pixelgrade" class="w-full max-w-sm rounded-lg">
+                </div>
+                <div class="space-y-4 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-gray-800">Lo no visto de pasar tres años en Pixelgrade</h2>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit. Proin ac dignissim nisl, at convallis orci. Maecenas a luctus lectus, sed interdum augue. Vestibulum sed dictum nisl, ac tempor massa.</p>
+                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300">Saber más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Logros -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-2 text-center lg:text-left">
+                    <h2 class="text-3xl font-bold text-gray-800">Ayudando a un negocio local a <br><span class="text-green-600">reinventarse</span></h2>
+                    <p class="text-gray-600">Llegamos aquí con nuestro arduo trabajo y dedicación.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://placehold.co/48x48/4CAF50/fff?text=I1" alt="Icono 1" class="h-12 w-12 rounded-full">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-800">2,245,341</p>
+                            <p class="text-gray-600">Miembros</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://placehold.co/48x48/4CAF50/fff?text=I2" alt="Icono 2" class="h-12 w-12 rounded-full">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-800">46,328</p>
+                            <p class="text-gray-600">Clubes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://placehold.co/48x48/4CAF50/fff?text=I3" alt="Icono 3" class="h-12 w-12 rounded-full">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-800">828,867</p>
+                            <p class="text-gray-600">Reservas de eventos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://placehold.co/48x48/4CAF50/fff?text=I4" alt="Icono 4" class="h-12 w-12 rounded-full">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-800">1,926,436</p>
+                            <p class="text-gray-600">Pagos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Diseño -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center md:justify-start">
+                    <img src="https://placehold.co/400x400/F5F7FA/717171?text=Ilustración" alt="Ilustración de diseño" class="w-full max-w-sm rounded-lg">
+                </div>
+                <div class="space-y-4 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-gray-800">Cómo diseñar el pie de página de tu sitio como lo hicimos nosotros</h2>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit. Proin ac dignissim nisl, at convallis orci. Maecenas a luctus lectus, sed interdum augue. Vestibulum sed dictum nisl, ac tempor massa.</p>
+                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300">Saber más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios de Clientes -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center lg:justify-start">
+                    <img src="https://placehold.co/300x300/F5F7FA/717171?text=Tesla" alt="Logo de Tesla" class="w-full max-w-xs rounded-lg">
+                </div>
+                <div class="space-y-4 text-center lg:text-left">
+                    <p class="text-gray-600 text-lg italic">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit. Proin ac dignissim nisl, at convallis orci. Maecenas a luctus lectus, sed interdum augue. Vestibulum sed dictum nisl, ac tempor massa."
+                    </p>
+                    <p class="text-green-600 font-bold text-xl">Tim Smith</p>
+                    <p class="text-gray-600">Asociación Británica de Carreras de Botes Dragón</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start items-center space-x-6">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C1" alt="Cliente 1" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C2" alt="Cliente 2" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C3" alt="Cliente 3" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C4" alt="Cliente 4" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C5" alt="Cliente 5" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C6" alt="Cliente 6" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
+                        <div class="flex items-center space-x-2 cursor-pointer text-green-600 hover:text-green-700 transition duration-300">
+                            <a href="#" class="font-semibold">Conoce a todos los clientes</a>
+                            <span class="font-bold text-xl">&rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Cuidar es el nuevo marketing</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">El blog de Nextcent es el mejor lugar para leer sobre el último software de gestión de membresías, sus mejores características y cómo aprovecharlo al máximo.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+1" alt="Imagen del blog 1" class="w-full">
+                        <div class="relative -mt-16 text-center">
+                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
+                                <h3 class="font-bold text-gray-800 mb-2">Creando un sitio web para tu asociación</h3>
+                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
+                                    <span>Leer más</span>
+                                    <span class="font-bold">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+2" alt="Imagen del blog 2" class="w-full">
+                        <div class="relative -mt-16 text-center">
+                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
+                                <h3 class="font-bold text-gray-800 mb-2">Cómo construir una comunidad con tu organización</h3>
+                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
+                                    <span>Leer más</span>
+                                    <span class="font-bold">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+3" alt="Imagen del blog 3" class="w-full">
+                        <div class="relative -mt-16 text-center">
+                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
+                                <h3 class="font-bold text-gray-800 mb-2">5 tácticas para aumentar la retención de tus miembros</h3>
+                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
+                                    <span>Leer más</span>
+                                    <span class="font-bold">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de CTA (Llamada a la acción) -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Pellentesque suscipit <br>fringilla libero eu.</h2>
+                <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300">Obtener una demostración <span class="ml-2 font-bold">&rarr;</span></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/40x40/4CAF50/fff?text=N" alt="Logo Nexcent" class="h-10 rounded-md">
+                    <span class="text-xl font-bold">Nexcent</span>
+                </div>
+                <p class="text-gray-400">Copyright © 2020 Nexcent ltd.</p>
+                <p class="text-gray-400">Todos los derechos reservados</p>
+                <div class="flex space-x-4">
+                    <!-- Iconos de redes sociales -->
+                    <a href="#" class="text-white hover:text-green-600 transition duration-300"><img src="https://placehold.co/24x24/4D4D4D/fff?text=F" alt="Icono de Facebook" class="h-6 w-6 rounded-full bg-gray-600 hover:bg-green-600"></a>
+                    <a href="#" class="text-white hover:text-green-600 transition duration-300"><img src="https://placehold.co/24x24/4D4D4D/fff?text=I" alt="Icono de Instagram" class="h-6 w-6 rounded-full bg-gray-600 hover:bg-green-600"></a>
+                    <a href="#" class="text-white hover:text-green-600 transition duration-300"><img src="https://placehold.co/24x24/4D4D4D/fff?text=T" alt="Icono de Twitter" class="h-6 w-6 rounded-full bg-gray-600 hover:bg-green-600"></a>
+                    <a href="#" class="text-white hover:text-green-600 transition duration-300"><img src="https://placehold.co/24x24/4D4D4D/fff?text=Y" alt="Icono de YouTube" class="h-6 w-6 rounded-full bg-gray-600 hover:bg-green-600"></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Empresa</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Acerca de nosotros</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Blog</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Contáctanos</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Precios</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Soporte</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Centro de ayuda</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Términos del servicio</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Legal</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Política de privacidad</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition duration-300">Estado</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Mantente al día</h4>
+                <form class="flex items-center space-x-2">
+                    <input type="email" placeholder="Tu dirección de correo" class="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-800 w-full">
+                    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú de navegación móvil
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
