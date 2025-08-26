@@ -3,258 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Aterrizaje Nexcent</title>
+    <title>Portafolio - Leonardo Rodriguez</title>
+    <!-- Incluimos el CDN de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-    </style>
+    <!-- Configuramos la fuente Inter -->
 </head>
-<body class="bg-white text-gray-800">
-    <header class="bg-white z-50 shadow-sm h-[5rem] fixed w-full max-[800px]:h-[2.5rem]">
-        <nav class="h-full px-4 py-4 flex justify-center items-center">
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Barra de navegación mejorada -->
+    <header class="bg-white z-50 shadow-md h-[4.5rem] fixed w-full top-0">
+        <nav class="container mx-auto h-full px-4 flex justify-center items-center">
             <div class="hidden md:flex space-x-6 lg:space-x-12 items-center">
-                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Inicio</a>
-                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Experiencia Laboral</a>
-                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Proyectos</a>
-                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Tecnologias</a>
-                <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Sobre Mi</a>
+                <a href="#session-inicio" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Inicio</a>
+                <a href="#session-experiencia-laboral" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Experiencia Laboral</a>
+                <a href="#session-proyectos" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Proyectos</a>
+                <a href="#session-tecnologias" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Tecnologías</a>
+                <a href="#session-sobre-mi" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Sobre Mí</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="bg-white py-16 md:py-40 w-full flex flex-row justify-center items-center gap-3">
-            <div class="mx-auto w-[800px] flex justify-end">
-                <img src="perfil.jpeg" class="size-full rounded-full max-w-[250px] mb-20">
-            </div>
-            <div class="w-full px-4 gap-8">
-                <div class="space-y-4 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800 max-[600px]:text-[1.2rem]">Hola soy, <br><span class="text-green-600"> Leonardo Rodriguez </span></h1>
-                    <p class="text-gray-600 text-lg md:text-xl max-w-[700px]">Ingeniero de Software y Desarrollador Web. Con 2 años de experiencia como freelancer, he colaborado en 
-                    la creación de aplicaciones web a medida, enfocándome en soluciones únicas y funcionales para cada cliente.</p>
-                    <div class="flex gap-2">
-                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300 cursor-pointer"> Contactame </button>
-                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300 cursor-pointer"> Descargar CV </button>
+        <section id="session-inicio" class="bg-white py-20 md:py-25 w-full flex justify-center items-center min-h-screen">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10 w-full max-w-4xl">
+                <img src="perfil.jpeg" class="rounded-full max-w-[250px] max-h-[250px] shadow-lg border-4 border-green-600 transition-all duration-300 transform hover:scale-105">
+                <div class="w-full text-center md:text-left flex flex-col items-center md:items-start">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">Hola, soy</h1>
+                    <h2 class="text-green-600 text-[2.5rem] md:text-5xl lg:text-6xl font-extrabold leading-tight">Leonardo Rodriguez</h2>
+                    <p class="text-gray-600 text-lg md:text-xl max-w-[700px] leading-relaxed mt-2">Ingeniero de Software y Desarrollador Web. Con 2 años de experiencia como freelancer, he colaborado en la creación de aplicaciones web a medida, enfocándome en soluciones únicas y funcionales para cada cliente.</p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-6">
+                        <a href="#contact-form" class="bg-green-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Contactame</a>
+                        <a href="cv.pdf" download class="bg-gray-200 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1">Descargar CV</a>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Sección de Pixelgrade -->
-        <section class="bg-white py-16">
-            <h2 class="text-center text-[3rem] mb-[1rem]"> Experiencial Laboral </h2>
-            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-                <div class="flex justify-center md:justify-start w-full">
-                    <img src="Proyecto_1.png" alt="Ilustración Pixelgrade" class="w-full rounded-lg">
-                </div>
-                <div class="space-y-4 text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-gray-800"> Sistema para la Gestion de un Restaurante </h2>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit.</p>
-                    <div class="flex flex-wrap justify-center lg:justify-start items-center space-x-6">
-                        <img src="HTML.png" title="HTML" alt="Cliente 1" class="h-8 cursor-pointer">
-                        <img src="CSS.png" title="CSS" alt="Cliente 2" class="h-8 cursor-pointer">
-                        <img src="TYPESCRIPT.png" title="TYPESCRIPT" alt="Cliente 3" class="h-8 cursor-pointer">
-                        <img src="ANGULAR.png" title="ANGULAR" alt="Cliente 4" class="h-8 cursor-pointer">
-                        <img src="TAILWIND.png" title="TAILWIND" alt="Cliente 5" class="h-8 cursor-pointer">
-                        <img src="NODEJS.jpg" title="NODEJS" alt="Cliente 6" class="h-8 cursor-pointer">
-                        <img src="EXPRESS.png" title="EXPRESS" alt="Cliente 6" class="h-8 cursor-pointer">
+        <!-- Sección de Experiencia Laboral -->
+        <section id="session-experiencia-laboral" class="py-16 px-4 lg:px-16 bg-gray-50">
+            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900">Experiencia Laboral</h2>
+            <div class="max-w-5xl mx-auto space-y-16">
+                <!-- Proyecto 1 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+                    <div class="flex justify-center md:justify-start">
+                        <!-- Usando la ruta original -->
+                        <img src="Proyecto_1.png" alt="Ilustración Sistema para la Gestion de un Restaurante" class="w-full rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105">
                     </div>
-                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300"> Ver Repositorio </button>
+                    <div class="space-y-4 text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-gray-800">Sistema para la Gestión de un Restaurante</h3>
+                        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit.</p>
+                        <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 py-2">
+                            <img src="HTML.png" title="HTML" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="CSS.png" title="CSS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="TYPESCRIPT.png" title="TYPESCRIPT" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="ANGULAR.png" title="ANGULAR" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="TAILWIND.png" title="TAILWIND" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="NODEJS.jpg" title="NODEJS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="EXPRESS.png" title="EXPRESS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                        </div>
+                        <a href="#" class="bg-green-600 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+                    <div class="flex justify-center md:justify-start order-1 md:order-2">
+                        <!-- Usando la ruta original -->
+                        <img src="Proyecto_2.png" alt="Ilustración Sistema para la Gestion de los tecnicos" class="w-full rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105">
+                    </div>
+                    <div class="space-y-4 text-center md:text-left order-2 md:order-1">
+                        <h3 class="text-2xl font-bold text-gray-800">Sistema para la Gestión de Técnicos de una Empresa de Internet</h3>
+                        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.</p>
+                        <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 py-2">
+                            <img src="HTML.png" title="HTML" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="CSS.png" title="CSS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="TYPESCRIPT.png" title="TYPESCRIPT" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="ANGULAR.png" title="ANGULAR" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="TAILWIND.png" title="TAILWIND" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="NODEJS.jpg" title="NODEJS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                            <img src="EXPRESS.png" title="EXPRESS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
+                        </div>
+                        <a href="#" class="bg-green-600 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Diseño -->
-        <section class="bg-white py-16">
-            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-                <div class="flex justify-center md:justify-start">
-                    <img src="Proyecto_2.png" alt="Ilustración de diseño" class="w-full rounded-lg">
-                </div>
-                <div class="space-y-4 text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-gray-800"> Sistema para la Gestion de los tecnicos de una empresa de Internet </h2>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.</p>
-                    <div class="flex flex-wrap justify-center lg:justify-start items-center space-x-6">
-                        <img src="HTML.png" title="HTML" alt="Cliente 1" class="h-8 cursor-pointer">
-                        <img src="CSS.png" title="CSS" alt="Cliente 2" class="h-8 cursor-pointer">
-                        <img src="TYPESCRIPT.png" title="TYPESCRIPT" alt="Cliente 3" class="h-8 cursor-pointer">
-                        <img src="ANGULAR.png" title="ANGULAR" alt="Cliente 4" class="h-8 cursor-pointer">
-                        <img src="TAILWIND.png" title="TAILWIND" alt="Cliente 5" class="h-8 cursor-pointer">
-                        <img src="NODEJS.jpg" title="NODEJS" alt="Cliente 6" class="h-8 cursor-pointer">
-                        <img src="EXPRESS.png" title="EXPRESS" alt="Cliente 6" class="h-8 cursor-pointer">
+        <!-- Sección de Proyectos (Sección de blogs) -->
+        <section id="session-proyectos" class="py-16 px-4 lg:px-16 bg-gray-100">
+            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900">Proyectos</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta de Blog 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <!-- Usando la ruta original -->
+                    <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+1" alt="Imagen del blog 1" class="w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Creando un sitio web para tu asociación</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Una breve descripción del blog sobre cómo crear un sitio web.</p>
+                        <a href="#" class="flex items-center space-x-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200">
+                            <span>Leer más</span>
+                            <span class="font-bold">&rarr;</span>
+                        </a>
                     </div>
-                    <button class="bg-green-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-green-700 transition duration-300"> Ver Repositorio </button>
+                </div>
+                <!-- Tarjeta de Blog 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <!-- Usando la ruta original -->
+                    <img src="https://placehold.co/400x250/F5F7FA/717170?text=Blog+2" alt="Imagen del blog 2" class="w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Cómo construir una comunidad con tu organización</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Una breve descripción del blog sobre cómo construir una comunidad.</p>
+                        <a href="#" class="flex items-center space-x-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200">
+                            <span>Leer más</span>
+                            <span class="font-bold">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Tarjeta de Blog 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <!-- Usando la ruta original -->
+                    <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+3" alt="Imagen del blog 3" class="w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">5 tácticas para aumentar la retención de tus miembros</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Una breve descripción del blog sobre las tácticas de retención.</p>
+                        <a href="#" class="flex items-center space-x-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200">
+                            <span>Leer más</span>
+                            <span class="font-bold">&rarr;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Testimonios de Clientes -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
-                <div class="flex justify-center lg:justify-start">
-                    <img src="" alt="Logo de Tesla" class="w-full max-w-xs rounded-lg">
+        <!-- Sección de Tecnologías -->
+        <section id="session-tecnologias" class="py-16 px-4 lg:px-16 bg-gray-50">
+            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900">Tecnologías</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- HTML -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="HTML.png" alt="Logo HTML" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">HTML</h3>
                 </div>
-                <div class="space-y-4 text-center lg:text-left">
-                    <p class="text-gray-600 text-lg italic">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit. Proin ac dignissim nisl, at convallis orci. Maecenas a luctus lectus, sed interdum augue. Vestibulum sed dictum nisl, ac tempor massa."
+                <!-- CSS -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="CSS.png" alt="Logo CSS" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">CSS</h3>
+                </div>
+                <!-- JAVASCRIPT -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="JAVASCRIPT.png" alt="Logo JAVASCRIPT" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">JAVASCRIPT</h3>
+                </div>
+                <!-- TYPESCRIPT -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="TYPESCRIPT.png" alt="Logo TYPESCRIPT" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">TYPESCRIPT</h3>
+                </div>
+                <!-- ANGULAR -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="ANGULAR.png" alt="Logo ANGULAR" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">ANGULAR</h3>
+                </div>
+                <!-- TAILWIND -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="TAILWIND.png" alt="Logo TAILWIND" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">TAILWIND</h3>
+                </div>
+                <!-- PHP -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="PHP.png" alt="Logo PHP" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">PHP</h3>
+                </div>
+                <!-- LARAVEL -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
+                    <img src="LARAVEL.png" alt="Logo LARAVEL" class="mb-4 size-16 object-cover">
+                    <h3 class="text-lg font-semibold text-gray-800">LARAVEL</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="session-sobre-mi" class="py-16 px-4 lg:px-16 bg-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900">Sobre Mí</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Columna de texto -->
+                <div class="space-y-4">
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        Soy un desarrollador apasionado por crear soluciones web eficientes y visualmente atractivas. Con 2 años de experiencia, he trabajado en proyectos de software y aplicaciones de gestión utilizando tecnologías como React, Vue, Node.js y Python.
                     </p>
-                    <p class="text-green-600 font-bold text-xl">Tim Smith</p>
-                    <p class="text-gray-600">Asociación Británica de Carreras de Botes Dragón</p>
-                    <div class="flex flex-wrap justify-center lg:justify-start items-center space-x-6">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C1" alt="Cliente 1" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C2" alt="Cliente 2" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C3" alt="Cliente 3" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C4" alt="Cliente 4" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C5" alt="Cliente 5" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <img src="https://placehold.co/32x32/4D4D4D/fff?text=C6" alt="Cliente 6" class="h-8 opacity-50 hover:opacity-100 cursor-pointer transition-opacity duration-300">
-                        <div class="flex items-center space-x-2 cursor-pointer text-green-600 hover:text-green-700 transition duration-300">
-                            <a href="#" class="font-semibold">Conoce a todos los clientes</a>
-                            <span class="font-bold text-xl">&rarr;</span>
-                        </div>
-                    </div>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        Mi enfoque se centra en escribir código limpio y escalable, siempre buscando las mejores prácticas y metodologías ágiles. Me encanta resolver problemas complejos y aprender nuevas tecnologías para mantenerme actualizado en un entorno en constante cambio.
+                    </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Sección de Blog -->
-        <section class="py-16">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Proyectos</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+1" alt="Imagen del blog 1" class="w-full">
-                        <div class="relative -mt-16 text-center">
-                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
-                                <h3 class="font-bold text-gray-800 mb-2">Creando un sitio web para tu asociación</h3>
-                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
-                                    <span>Leer más</span>
-                                    <span class="font-bold">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+2" alt="Imagen del blog 2" class="w-full">
-                        <div class="relative -mt-16 text-center">
-                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
-                                <h3 class="font-bold text-gray-800 mb-2">Cómo construir una comunidad con tu organización</h3>
-                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
-                                    <span>Leer más</span>
-                                    <span class="font-bold">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+3" alt="Imagen del blog 3" class="w-full">
-                        <div class="relative -mt-16 text-center">
-                            <div class="bg-gray-50 p-4 mx-4 rounded-lg shadow-sm">
-                                <h3 class="font-bold text-gray-800 mb-2">5 tácticas para aumentar la retención de tus miembros</h3>
-                                <a href="#" class="flex items-center justify-center space-x-2 text-green-600 hover:text-green-700 font-semibold">
-                                    <span>Leer más</span>
-                                    <span class="font-bold">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                <!-- Sección de Comunidad -->
-        <section class="py-5 flex justify-center items-center flex-col">
-            <div class="px-4 py-15 text-center w-full max-w-[1100px]">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8"> Tecnologias </h2>
-                <div class="grid md:grid-cols-5 gap-5">
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="HTML.png" alt="Organizaciones de membresía" class="mb-1 object-cover size-[4rem]">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> HTML </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="CSS.png" alt="Asociaciones Nacionales" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> CSS </h3>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="JAVASCRIPT.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> JAVASCRIPT </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="TYPESCRIPT.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> TYPESCRIPT </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="ANGULAR.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> ANGULAR </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="TAILWIND.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-[.8rem] font-bold text-gray-800 mb-1"> TAILWIND </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="PHP.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> PHP </h3>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-md text-center flex flex-col justify-center items-center">
-                        <img src="LARAVEL.png" alt="Clubes y Grupos" class="size-[4rem] object-cover mb-1">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1"> LARAVEL </h3>
-                    </div>
+                <!-- Columna de imagen o avatar -->
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://placehold.co/300x300/F3F4F6/6B7280?text=Leonardo" alt="Foto de perfil del desarrollador" class="w-64 h-64 md:w-90 md:h-90 shadow-lg object-cover border-4 border-green-600">
                 </div>
             </div>
         </section>
 
     </main>
 
-     <div class="backdrop-blur-sm p-8 md:p-12 w-full flex justify-center items-center">
-        <div class="max-w-[70%] w-full p-3">
-        <!-- Título del formulario -->
-        <h1 class="text-3xl md:text-4xl font-semibold text-center mb-8 text-black">Contact Us</h1>
-
-        <!-- Formulario en sí, con un layout de cuadrícula responsivo -->
-        <form class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Campo de 'Address' -->
-                <div class="col-span-1">
-                    <label for="address" class="block text-sm font-medium text-black mb-1">Address</label>
-                    <textarea id="address" rows="3" class="w-full px-4 py-3 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="Enter your address"></textarea>
-                </div>
-                <!-- Campo de 'Name' -->
-                <div class="col-span-1">
-                    <label for="name" class="block text-sm font-medium text-black mb-1">Name</label>
-                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="Enter your Name">
-                </div>
-                <!-- Campo de 'Phone' -->
-                <div class="col-span-1">
-                    <label for="phone" class="block text-sm font-medium text-black mb-1">Phone</label>
-                    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="Enter your phone (e.g. +14155552671)">
-                </div>
-                <!-- Campo de 'Date' -->
-                <div class="col-span-1">
-                    <label for="date" class="block text-sm font-medium text-black mb-1">Date</label>
-                    <input type="date" id="date" class="w-full px-4 py-3 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="mm/dd/yyyy">
-                </div>
-            </div>
-            
-            <!-- Campo de 'Message' -->
-            <div>
-                <label for="message" class="block text-sm font-medium text-black mb-1">Message</label>
-                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-200 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="Enter your message"></textarea>
-            </div>
-            
-            <!-- Botón de 'Submit' -->
-            <div class="flex justify-start pt-4">
-                <button type="submit" class="w-48 bg-black text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-800 transition-colors duration-200">
-                    SUBMIT
-                </button>
-            </div>
-        </form>
-    </div>
-    </div>
-
-    
+    <!-- Pie de página -->
+    <footer class="py-8 text-center text-gray-600 bg-gray-50 shadow-inner">
+        <p>&copy; 2024 Leonardo Rodriguez. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
