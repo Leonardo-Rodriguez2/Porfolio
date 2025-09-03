@@ -1,243 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Leonardo Rodriguez</title>
-    <!-- Incluimos el CDN de Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuramos la fuente Inter -->
-</head>
-<body class="bg-gray-100 text-gray-800">
 
-    <!-- Barra de navegación mejorada -->
-    <header class="bg-white z-50 shadow-md h-[4.5rem] fixed w-full top-0">
-        <nav class="container mx-auto h-full px-4 flex justify-center items-center">
-            <div class="hidden md:flex space-x-6 lg:space-x-12 items-center">
-                <a href="#session-inicio" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Inicio</a>
-                <a href="#session-experiencia-laboral" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Experiencia Laboral</a>
-                <a href="#session-proyectos" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Proyectos</a>
-                <a href="#session-tecnologias" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Tecnologías</a>
-                <a href="#session-sobre-mi" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">Sobre Mí</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Seccion del header -->
+    <!-- Se encuentra en el componente HeaderComponent -->
+
+    <app-header></app-header>
 
     <main>
-        <section id="session-inicio" class="bg-white py-20 md:py-25 w-full flex justify-center items-center min-h-screen">
-            <div class="flex flex-col md:flex-row justify-center items-center gap-10 w-full max-w-4xl">
-                <img src="perfil.jpeg" class="rounded-full max-w-[250px] max-h-[250px] shadow-lg border-4 border-green-600 transition-all duration-300 transform hover:scale-105">
-                <div class="w-full text-center md:text-left flex flex-col items-center md:items-start">
-                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">Hola, soy</h1>
-                    <h2 class="text-green-600 text-[2.5rem] md:text-5xl lg:text-6xl font-extrabold leading-tight">Leonardo Rodriguez</h2>
-                    <p class="text-gray-600 text-lg md:text-xl max-w-[700px] leading-relaxed mt-2">Ingeniero de Software y Desarrollador Web. Con 2 años de experiencia como freelancer, he colaborado en la creación de aplicaciones web a medida, enfocándome en soluciones únicas y funcionales para cada cliente.</p>
-                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-6">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardorodriguez172021@gmail.com" target="_blank" class="bg-green-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Contactame</a>
-                        <a href="cv.pdf" download class="bg-gray-200 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-300 transition duration-300 transform hover:-translate-y-1">Descargar CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección de Experiencia Laboral -->
-        <section id="session-experiencia-laboral" class="py-16 px-4 lg:px-16 bg-gray-50">
-            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900 mt-6">Experiencia Laboral</h2>
-            <div class="max-w-5xl mx-auto space-y-16">
-                <!-- Proyecto 1 -->
-                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl">
-                    <div class="flex justify-center md:justify-start">
-                        <!-- Usando la ruta original -->
-                        <img src="Proyecto_1.png" alt="Ilustración Sistema para la Gestion de un Restaurante" class="w-full rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105">
-                    </div>
-                    <div class="space-y-4 text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-800">Sistema para la Gestión de un Restaurante</h3>
-                        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit.</p>
-                        <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 py-2">
-                            <img src="HTML.png" title="HTML" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="CSS.png" title="CSS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="TYPESCRIPT.png" title="TYPESCRIPT" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="ANGULAR.png" title="ANGULAR" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="TAILWIND.png" title="TAILWIND" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="NODEJS.jpg" title="NODEJS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="EXPRESS.png" title="EXPRESS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                        </div>
-                        <a href="#" class="bg-green-600 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
+        <!-- Sección de Inicio -->
+        <!-- Se encuentra en el componente top.of.page -->
 
-                <!-- Proyecto 2 -->
-                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl">
-                    <div class="flex justify-center md:justify-start order-1 md:order-2">
-                        <!-- Usando la ruta original -->
-                        <img src="Proyecto_2.png" alt="Ilustración Sistema para la Gestion de los tecnicos" class="w-full rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105">
-                    </div>
-                    <div class="space-y-4 text-center md:text-left order-2 md:order-1">
-                        <h3 class="text-2xl font-bold text-gray-800">Sistema para la Gestión de Técnicos de una Empresa de Internet</h3>
-                        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla (En Desarrollo).
+        <app-top-of-page></app-top-of-page>
+      
 
-                        <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 py-2">
-                            <img src="HTML.png" title="HTML" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="CSS.png" title="CSS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="TYPESCRIPT.png" title="TYPESCRIPT" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="ANGULAR.png" title="ANGULAR" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="TAILWIND.png" title="TAILWIND" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="NODEJS.jpg" title="NODEJS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="EXPRESS.png" title="EXPRESS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                        </div>
-                        <a href="#" class="bg-green-600 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
+        <!-- Seccion de Experiencia Laboral -->
+        <!-- Se encuentra en el componente work.experience -->
 
-                 <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl">
-                    <div class="flex justify-center md:justify-start">
-                        <!-- Usando la ruta original -->
-                        <img src="Proyecto_1.png" alt="Ilustración Sistema para la Gestion de un Restaurante" class="w-full rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105">
-                    </div>
-                    <div class="space-y-4 text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-800">Sistema para la Gestión de un Restaurante</h3>
-                        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis consectetur mi id eleifend. Pellentesque venenatis dictum elit.</p>
-                        <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 py-2">
-                            <img src="HTML.png" title="HTML" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="CSS.png" title="CSS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="JAVASCRIPT.png" title="TYPESCRIPT" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="TAILWIND.png" title="TAILWIND" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="PHP.png" title="ANGULAR" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                            <img src="LARAVEL.png" title="NODEJS" class="h-10 cursor-pointer rounded-full shadow-sm hover:shadow-lg transition-shadow duration-200">
-                        </div>
-                        <a href="#" class="bg-green-600 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
+        <app-work-experience></app-work-experience>
 
-            </div>
-        </section>
+        
 
-        <!-- Sección de Proyectos (Sección de blogs) -->
-        <section id="session-proyectos" class="py-16 px-4 lg:px-16 bg-gray-100">
-            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900 mt-6">Proyectos</h2>
-            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-                <!-- Tarjeta de Blog 1 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <!-- Usando la ruta original -->
-                    <img src="Proyecto_3.png" alt="Imagen del blog 1" class="w-full object-cover">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2"> Tienda Online </h3>
-                        <p> Tienda online con uso de APIS como (fakestoreapi,otra APi) con una interfaz agradable y moderna </p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                    <a href="https://github.com/Leonardo-Rodriguez2/Tienda-Online" target="_blank" class="bg-green-600 inline-block max-w-[200px] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
-                <!-- Tarjeta de Blog 2 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <!-- Usando la ruta original -->
-                    <img src="Proyecto_4.png" alt="Imagen del blog 2" class="w-full object-cover">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2"> Conversor de Dólar </h3>
-                        <p> Un sistema de conversión del dolar, para calcular el valor del dólar de direferentes paises APIs(dolarapi)</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                    <a href="https://github.com/Leonardo-Rodriguez2/Tienda-Online" target="_blank" class="bg-green-600 inline-block max-w-[200px] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
-                <!-- Tarjeta de Blog 3 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <!-- Usando la ruta original -->
-                    <img src="https://placehold.co/400x250/F5F7FA/717171?text=Blog+3" alt="Imagen del blog 3" class="w-full object-cover">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">5 tácticas para aumentar la retención de tus miembros</h3>
-                        <a href="#" class="bg-green-600 inline-block max-w-[200px] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1">Ver Repositorio</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Sección de Proyectos Personales -->
+        <!-- Se encuentra en el componente personal.projects -->
 
-        <!-- Sección de Tecnologías -->
-        <section id="session-tecnologias" class="py-16 px-4 lg:px-16 bg-gray-50">
-            <h2 class="text-center font-bold text-3xl md:text-4xl mb-12 text-gray-900 mt-6">Tecnologías</h2>
-            <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                <!-- HTML -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="HTML.png" alt="Logo HTML" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">HTML</h3>
-                </div>
-                <!-- CSS -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="CSS.png" alt="Logo CSS" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">CSS</h3>
-                </div>
-                <!-- JAVASCRIPT -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="JAVASCRIPT.png" alt="Logo JAVASCRIPT" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">JAVASCRIPT</h3>
-                </div>
-                <!-- TYPESCRIPT -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="TYPESCRIPT.png" alt="Logo TYPESCRIPT" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">TYPESCRIPT</h3>
-                </div>
-                <!-- ANGULAR -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="ANGULAR.png" alt="Logo ANGULAR" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">ANGULAR</h3>
-                </div>
-                <!-- TAILWIND -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="TAILWIND.png" alt="Logo TAILWIND" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">TAILWIND</h3>
-                </div>
-                <!-- PHP -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="PHP.png" class="mb-4 size-14 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">PHP</h3>
-                </div>
-                <!-- LARAVEL -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="LARAVEL.png" alt="Logo LARAVEL" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">LARAVEL</h3>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-lg text-center flex flex-col items-center hover:shadow-xl transition-shadow duration-200">
-                    <img src="GIT.png" alt="Logo LARAVEL" class="mb-4 size-16 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800">GIT</h3>
-                </div>
-            </div>
-        </section>
+        <app-personal-projects></app-personal-projects>
+
+
+
+        
+        <!-- Sección de Stack Tecnologías -->
+        <!-- Se encuentra en el componente technology.stack -->
+
+        <app-technology-stack></app-technology-stack>
 
         <!-- Sección Sobre Mí -->
-        <section id="session-sobre-mi" class="py-16 px-4 lg:px-16 bg-white">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900">Sobre Mí</h2>
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-4 w-[40rem]">
-                    <p class="text-[1.2rem] leading-relaxed text-gray-600">
-                        Soy un Apasionado desarrollador web con 2 años de experiencia creando soluciones eficientes y atractivas. Me especializo en Angular y Laravel, con un enfoque en código limpio, escalable y metodologías ágiles. Busco constantemente nuevas tecnologías para resolver problemas complejos y mantenerme actualizado.                    
-                    </p>
+        <!-- Se encuentra en el componente about.me -->
 
-
-            <div class="mx-auto flex gap-6 mt-[2rem]">
-                <a href="https://github.com/Leonardo-Rodriguez2" target="_blank">
-                <div class="flex flex-col items-center hover:transform  hover:-translate-y-[3px] cursor-pointer duration-200">
-                    <img src="github.png" alt="Logo HTML" class="size-12 object-cover">
-                </div>
-                </a>
-                <a href="https://www.linkedin.com/in/leonardo-rodriguez-093529323/" target="_blank">
-                <div class="flex flex-col items-center hover:transform  hover:-translate-y-[3px] cursor-pointer duration-200">
-                    <img src="linkedin.png" alt="Logo HTML" class="size-12 object-cover">
-                </div>
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardorodriguez172021@gmail.com" target="_blank">
-                <div class="flex flex-col items-center hover:transform  hover:-translate-y-[3px] cursor-pointer duration-200">
-                    <img src="gmail.png" alt="Logo HTML" class="size-12 object-cover">
-                </div>
-                </a>
-            </div>
-
-
-
-                </div>
-                <div class="flex justify-center md:justify-end">
-                    <img src="hombre-de-negocio.jpeg" alt="Foto de perfil del desarrollador" class="w-64 h-64 md:w-90 md:h-90 shadow-lg object-cover border-4 border-green-600">
-                </div>
-            </div>
-        </section>
+        <app-about-me></app-about-me>
+        
 
     </main>
 
@@ -246,5 +45,3 @@
         <p>&copy; 2025 Leonardo Rodriguez. Todos los derechos reservados.</p>
     </footer>
 
-</body>
-</html>

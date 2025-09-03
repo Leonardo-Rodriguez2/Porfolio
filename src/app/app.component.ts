@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { WorkExperienceComponent } from './components/work.experience/work.experience.component';
+import { PersonalProjectsComponent } from './components/personal.projects/personal.projects.component';
+import { TechnologyStackComponent } from './components/technology.stack/technology.stack.component';
+import { AboutMeComponent } from './components/about.me/about.me.component';
+import { TopOfPageComponent } from './components/top.of.page/top.of.page.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [HeaderComponent, WorkExperienceComponent, 
+  PersonalProjectsComponent, TechnologyStackComponent, 
+  AboutMeComponent, TopOfPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'landing-page';
 }
