@@ -6,12 +6,13 @@ import { PersonalProjectsComponent } from './components/personal.projects/person
 import { TechnologyStackComponent } from './components/technology.stack/technology.stack.component';
 import { AboutMeComponent } from './components/about.me/about.me.component';
 import { TopOfPageComponent } from './components/top.of.page/top.of.page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   imports: [HeaderComponent, WorkExperienceComponent, 
   PersonalProjectsComponent, TechnologyStackComponent, 
-  AboutMeComponent, TopOfPageComponent],
+  AboutMeComponent, TopOfPageComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
